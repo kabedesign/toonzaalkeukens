@@ -1,0 +1,99 @@
+body {
+	background: $color__background-body; // Fallback for when there is no custom background color defined.
+}
+
+.bg{
+	position: relative;
+	float:left;
+	padding: 100px 0;
+	width: 100%;
+	&.grey{
+		background-color: $light_grey;
+	}
+	&.black{
+		background-color: #1e1e1e;
+	}
+	&.no-top{
+		padding-top: 0px;
+	}
+}
+.fade{
+	opacity: 0;
+}
+article{
+	display: flex;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+.intro{
+	margin: 0 0 50px 0;
+}
+.count-posts{
+	font-family: $font__url;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	color: $primary_color;
+	margin: 0 0 50px 0;
+}
+.quote{
+	margin-bottom: 40px;
+	h2{
+		color: $color__text-main;
+	}
+}
+ul.contact{
+		padding-inline-start: 0;
+		list-style: none;
+}
+.paginering{
+	font-family: $font__url;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	ul{
+		margin: 20px 10px;
+	}
+	ul.page-numbers{
+		li{
+			float: left;
+			display: inline-block;
+			margin-right: 20px;
+			a{
+				padding: 15px;
+				&:hover{
+					background-color: $light_grey;
+					text-decoration: none;
+				}
+			}
+		}
+		.current{
+			color: $grey;
+			border: 1px solid $light_grey;
+			padding: 15px;
+		}
+	}
+}
+
+/*-------------------------------------------------------------------
+   800px
+--------------------------------------------------------------------*/
+
+@media screen and (max-width:800px){
+	.bg{
+		padding: 40px 0;
+	}
+}
+/*-------------------------------------------------------------------
+   600px
+--------------------------------------------------------------------*/
+
+@media screen and (max-width:600px){
+	.intro{
+		margin: 0 0 20px 0;
+	}
+	.count-posts{
+		margin: 0 0 20px 0;
+		font-size: 0.8em;
+	}
+}

@@ -1,0 +1,141 @@
+footer{
+	.dealer-slider{
+		position: relative;
+		float: left;
+		width: 100%;
+		text-align: center;
+		max-height: 320px;
+		padding: 50px 20px;
+		border-top: 1px solid $light_grey;
+		.dealer-slide{
+			position: relative;
+			display: flex!important;
+			justify-content: center;
+		}
+	}
+	.bg{
+		padding: 100px 0 0 0;
+	}
+	.site-info{
+		ul{
+			list-style: none;
+			margin: 30px 0;
+			font-size: 0.8em;
+		}
+	}
+	.site-contact{
+		color: $grey;
+		p{
+			margin:0 0 20px 0;
+		}
+		.contact{
+			margin-left: 0px;
+			li{
+				font-size: 1.2em;
+				a{
+					color: $white;
+				}
+			}
+		}
+	}
+	.footer-end{
+		font-family: $font__url;
+		font-size: 0.6em;
+		text-transform: uppercase;
+		margin: 100px 0 20px 0;
+	}
+	.kabedesign{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50px;
+		height: 50px;
+		background: url('img/kabedesign.svg') no-repeat center;
+		margin: 10px;
+	}
+}
+
+.scroll-to-top{
+		position: absolute;
+		width: 80px;
+		top:0;
+		bottom: 0;
+		left:0;
+		background-color: #232323;
+		padding:29px;
+		.vertical{
+			position: absolute;
+			bottom: 40px;
+		}
+	}
+	.vertical{
+		display: inline-block;
+		font-family: $font__url;
+		font-size: 0.7em;
+		text-transform: uppercase;
+		writing-mode: tb-rl;
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+		white-space: nowrap;
+		&:after{
+			content:"";
+			display: inline-block;
+			width: 1px;
+			height: 40px;
+			background-color: $primary_color;
+			margin-top: 20px;
+		}
+	}
+/*-------------------------------------------------------------------
+   600px
+--------------------------------------------------------------------*/
+
+@media screen and (max-width:600px){
+	footer{
+		.dealer-slider{
+			padding: 20px;
+		}
+		.bg{
+			padding: 100px 0 120px 0;
+		}
+		.site-info{
+			ul{
+				margin: 20px 0;
+				font-size: 1em;
+			}
+		}
+		.footer-end{
+			font-size: 0.7em;
+			margin: 20px 0;
+		}
+		.kabedesign{
+			bottom: 80px;
+		}
+	}
+	.scroll-to-top{
+		width: auto;
+		bottom: unset;
+		right: 0;
+		height: 65px;
+		padding: 0 20px;
+		.vertical{
+			bottom: 22px;
+		}
+	}
+	.vertical{
+		font-size: 0.8em;
+		writing-mode: unset;
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+		&:after{
+			width: 20px;
+			height: 1px;
+		}
+	}
+}

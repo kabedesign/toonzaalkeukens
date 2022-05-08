@@ -1,0 +1,119 @@
+.banner-wrapper{
+	position:relative;
+	.banner-thumb{
+		position: relative;
+		z-index:1;
+		margin-top: -135px;	
+	}
+}
+
+.verticalbar{
+		position: absolute;
+		bottom:9px;
+		right:-20px;
+		width:80px;
+		z-index: 1;
+		text-align: center;
+		padding: 40px 0 20px 0;
+		&.grey{
+			background-color: $light_grey;
+		}
+		&.left{
+			right: unset;
+			left: -40px;
+		}
+		a{
+			-webkit-transition: all .2s linear; /* For Safari 3.1 to 6.0 */
+		  	transition: all .2s linear;
+			&:before{
+				content:"";
+				display: inline-block;
+				width: 1px;
+				height: 40px;
+				background-color: $primary_color;
+				margin-bottom: 20px;
+			}
+			&:hover{
+				&:before{
+					margin-bottom: 40px;
+				}
+			}
+		}
+		.text{
+			display: inline-block;
+			font-family: $font__url;
+			font-size: 0.7em;
+			text-transform: uppercase;
+			writing-mode: tb-rl;
+			-webkit-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			transform: rotate(180deg);
+			white-space: nowrap;
+		}
+	}
+
+/*-------------------------------------------------------------------
+   800px
+--------------------------------------------------------------------*/
+
+@media screen and (max-width:800px){
+	.banner-wrapper{
+		.banner-thumb{
+			margin-top: 0;	
+		}
+	}
+	.verticalbar{
+		a{
+			&:before{
+				height:20px;
+			}
+		}
+	}
+}
+
+/*-------------------------------------------------------------------
+   600px
+--------------------------------------------------------------------*/
+
+@media screen and (max-width:600px){
+	.banner-wrapper{
+		.banner-thumb{
+			img{
+				height:280px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.verticalbar{
+		bottom: -38px;
+		left: 0;
+		right: 0;
+		width: auto;
+		text-align: left;
+		padding: 20px;
+		.text{
+			writing-mode: unset;
+			transform: rotate(0deg);
+		}
+		&.left{
+			left: 0;
+			right: 0;
+			bottom: -58px;
+		}
+		a{
+			&:before{
+				height: 1px;
+				width: 20px;
+				margin-bottom: 3px;
+				margin-right: 20px;
+			}
+			&:hover{
+				&:before{
+					margin-bottom: 3px;
+				}
+			}
+		}
+	}
+}

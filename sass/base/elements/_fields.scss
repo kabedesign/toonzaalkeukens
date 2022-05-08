@@ -1,0 +1,93 @@
+form{
+	p{
+		margin: 0;
+	}
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: $color__text-main;
+	border: 1px solid $light_grey;
+	padding: 12px 20px;
+	margin-bottom: 15px;
+	background-color: $light_grey;
+	width: 100%;
+
+	&:focus {
+		color: $color__text-input-focus;
+		outline: 1px solid $primary_color;
+	}
+}
+
+select {
+	border: 1px solid $color__border-input;
+}
+
+textarea {
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 54px;
+	margin-bottom: 15px;
+}
+
+input[type="checkbox"]{
+	position: relative;
+	visibility: hidden;
+	margin-bottom: 25px;
+
+	& + span{
+		
+
+		&:before{
+			content:'';
+			display: block;
+			position: absolute;
+			height: 20px;
+			width: 20px;
+			top: 0;
+			left: 0;
+			background-color: $light_grey;
+		}
+		&:after{
+			content:'\263B';
+			display: block;
+			position: absolute;
+			height: 20px;
+			width: 20px;
+			top: 0;
+			left: 0;
+			background-color: $light_grey;
+			color: $primary_color;
+			visibility: hidden;
+			padding-left: 3px;
+			line-height: 20px;
+		}
+	}
+
+	&:checked{
+
+		& + span{
+			&:before{
+				background:transparant;
+				border-color: $light_grey;
+			}
+			&:after{
+				visibility: visible;
+			}
+		}
+	}
+}

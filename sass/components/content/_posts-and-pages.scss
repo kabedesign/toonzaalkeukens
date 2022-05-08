@@ -1,0 +1,53 @@
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	// margin: 1.5em 0 0;
+}
+
+.entry-content{
+	&.pl{
+		padding-left:80px;
+	}
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*-------------------------------------------------------------------
+   800px
+--------------------------------------------------------------------*/
+
+@media screen and (max-width:800px){
+	.entry-content{
+		&.pl{
+			padding-left: 0;
+		}
+	}
+}
+
+/*-------------------------------------------------------------------
+   600px
+--------------------------------------------------------------------*/
+
+@media screen and (max-width:600px){
+	.entry-content{
+		&.pl{
+			padding-left: 20px;
+		}
+	}
+}
