@@ -289,7 +289,7 @@
 		.keuken-slider{
 			.slide{
 				img{
-					// height: 220px;
+					height: 220px;
 				}
 			}
 		}
@@ -341,11 +341,12 @@
 	}
 	#related{
 		.result{
-			display: block!important;
-		}
-		.img-wrapper{
-			height: 280px;
+			position: relative;
+			float: left;
+			width: 100%;
+			display: block; 
+			justify-content: center;
 		}
 	}
-		
+
 }

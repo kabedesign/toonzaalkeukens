@@ -1822,7 +1822,8 @@ html {
 @media screen and (max-width: 680px) {
   .slick-prev, .slick-next {
     height: 54px;
-    width: 54px; }
+    width: 54px;
+    bottom: 7px; }
 
   .slick-prev {
     right: 54px; } }
@@ -2710,7 +2711,7 @@ footer .kabedesign {
       position: relative; }
       .keuken-slider-wrapper .keuken-slider .slide img {
         width: 100%;
-        height: 620px; }
+        height: auto; }
   .keuken-slider-wrapper .entry-header {
     position: relative;
     float: left;
@@ -2788,8 +2789,6 @@ footer .kabedesign {
 @media screen and (max-width: 800px) {
   .thumb-wrapper {
     margin-bottom: 20px; }
-    .thumb-wrapper .img-wrapper {
-      height: 240px; }
     .thumb-wrapper .prijs-wrapper .vanaf-prijs {
       margin-bottom: 10px; }
 
@@ -2860,8 +2859,12 @@ footer .kabedesign {
     #featured-dealer .thumb-dealer img {
       align-self: center; }
 
-  #related .img-wrapper {
-    height: 280px; } }
+  #related .result {
+    position: relative;
+    float: left;
+    width: 100%;
+    display: block;
+    justify-content: center; } }
 .dealer-wrapper {
   position: relative;
   float: left;
@@ -3129,14 +3132,14 @@ input[type="checkbox"] {
     .mobile-menu-wrapper .main-navigation.toggled ul {
       display: block !important;
       position: fixed;
-      top: 40vh;
+      top: 10vh;
       bottom: 82px;
       left: 0;
       right: 0;
       background-color: #fff;
       z-index: 11;
       padding: 10px 0;
-      box-shadow: 0px -40vh 0px 0px rgba(0, 0, 0, 0.6); }
+      box-shadow: 0px -20vh 0px 0px rgba(0, 0, 0, 0.6); }
     .mobile-menu-wrapper .main-navigation ul {
       display: none; }
     .mobile-menu-wrapper .main-navigation li {
