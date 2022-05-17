@@ -2789,6 +2789,8 @@ footer .kabedesign {
 @media screen and (max-width: 800px) {
   .thumb-wrapper {
     margin-bottom: 20px; }
+    .thumb-wrapper .img-wrapper {
+      height: 240px; }
     .thumb-wrapper .prijs-wrapper .vanaf-prijs {
       margin-bottom: 10px; }
 
@@ -2824,7 +2826,7 @@ footer .kabedesign {
     line-height: 32px;
     left: -10px; }
   .keuken-slider-wrapper .keuken-slider .slide img {
-    height: 220px; }
+    height: 240px; }
   .keuken-slider-wrapper .entry-header {
     flex: 0 0 100%;
     max-width: 100%;
@@ -2859,6 +2861,8 @@ footer .kabedesign {
     #featured-dealer .thumb-dealer img {
       align-self: center; }
 
+  #related .img-wrapper {
+    height: 240px; }
   #related .result {
     position: relative;
     float: left;

@@ -224,7 +224,7 @@
 	.thumb-wrapper{
 		margin-bottom: 20px;
 		.img-wrapper{
-			// height: 240px;
+			height: 240px;
 		}
 		.prijs-wrapper{
 			.vanaf-prijs{
@@ -289,7 +289,7 @@
 		.keuken-slider{
 			.slide{
 				img{
-					height: 220px;
+					height: 240px;
 				}
 			}
 		}
@@ -340,6 +340,9 @@
 		}
 	}
 	#related{
+		.img-wrapper{
+			height: 240px;
+		}
 		.result{
 			position: relative;
 			float: left;
