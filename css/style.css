@@ -2710,7 +2710,7 @@ footer .kabedesign {
     .keuken-slider-wrapper .keuken-slider .slide {
       position: relative; }
       .keuken-slider-wrapper .keuken-slider .slide img {
-        width: 100%;
+        width: auto;
         height: auto; }
   .keuken-slider-wrapper .entry-header {
     position: relative;
